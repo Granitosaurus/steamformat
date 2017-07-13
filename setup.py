@@ -6,6 +6,12 @@ setup(
     packages=['steamformatter'],
     url='',
     license='GPLv3',
+    install_requires=[
+        'click',
+        'requests',
+        'requests_futures',
+        'parsel',
+    ],
     author='granitosaurus',
     entry_points="""
         [console_scripts]

@@ -19,6 +19,8 @@ PARSERS = {
 @click.option('--nolog', is_flag=True, help="produce no log")
 @click.option('--sort', type=click.Choice(SteamItem._fields), help="sort fields", show_default=True, default='rating')
 def cli(url, nolog, sort):
+    """Outputs markdown table of games found in online sources: 
+    bundlestars.com bundle pages, reddit comments(permalink) or posts"""
     if nolog:
         log.setLevel(logging.CRITICAL)
     parsed_url = urlparse(url)
