@@ -2,7 +2,7 @@ from distutils.core import setup
 
 setup(
     name='steamformatter',
-    version='0.1',
+    version='0.2',
     packages=['steamformatter'],
     url='',
     license='GPLv3',
